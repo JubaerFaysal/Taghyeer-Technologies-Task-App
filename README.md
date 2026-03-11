@@ -57,14 +57,16 @@ lib/
 ---
 
 
-### Installation
+## Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/JubaerFaysal/taghyeer_technologies.git
 cd taghyeer_technologies
+flutter pub get
+flutter run
+```
 
-
+---
 
 ### Demo Credentials
 
