@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../core/utils/storage_service.dart';
+import '../core/utils/storage_service.dart';
 
 class ThemeController extends GetxController {
   final RxBool isDarkMode = false.obs;
@@ -14,8 +14,8 @@ class ThemeController extends GetxController {
 
   void toggleTheme() {
     isDarkMode.value = !isDarkMode.value;
-    Get.changeThemeMode(isDarkMode.value ? ThemeMode.dark : ThemeMode.light);
     StorageService.saveThemeMode(isDarkMode.value);
+    update();
   }
 
   ThemeMode get themeMode =>

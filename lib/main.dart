@@ -9,26 +9,28 @@ import 'routes/app_routes.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await StorageService.init();
-  final themeController = Get.put(ThemeController());
-  runApp(MyApp(themeController: themeController));
+  Get.put(ThemeController(), permanent: true);
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final ThemeController themeController;
-  const MyApp({super.key, required this.themeController});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => GetMaterialApp(
-        title: 'Taghyeer Technologies',
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.lightTheme,
-        darkTheme: AppTheme.darkTheme,
-        themeMode: themeController.isDarkMode.value ? ThemeMode.dark : ThemeMode.light,
-        initialRoute: StorageService.isLoggedIn() ? AppRoutes.home : AppRoutes.login,
-        getPages: AppPages.pages,
-      ),
+    return GetBuilder<ThemeController>(
+      builder: (themeController) {
+        final isDark = themeController.isDarkMode.value;
+        return GetMaterialApp(
+          key: ValueKey(isDark),
+          title: 'Taghyeer Technologies',
+          debugShowCheckedModeBanner: false,
+          theme: isDark ? AppTheme.darkTheme : AppTheme.lightTheme,
+          initialRoute:
+              StorageService.isLoggedIn() ? AppRoutes.home : AppRoutes.login,
+          getPages: AppPages.pages,
+        );
+      },
     );
   }
 }

@@ -92,13 +92,13 @@ class ProductDetailScreen extends StatelessWidget {
                             vertical: 4,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.red.shade50,
+                            color: Theme.of(context).colorScheme.errorContainer,
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Text(
                             '-${product.discountPercentage.toStringAsFixed(1)}%',
                             style: TextStyle(
-                              color: Colors.red.shade700,
+                              color: Theme.of(context).colorScheme.onErrorContainer,
                               fontWeight: FontWeight.bold,
                             ),
                           ),

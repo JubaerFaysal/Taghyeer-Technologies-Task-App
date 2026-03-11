@@ -144,7 +144,7 @@ class ProductsScreen extends GetView<ProductController> {
                                           vertical: 2,
                                         ),
                                         decoration: BoxDecoration(
-                                          color: Colors.red.shade50,
+                                          color: Theme.of(context).colorScheme.errorContainer,
                                           borderRadius: BorderRadius.circular(
                                             4,
                                           ),
@@ -153,7 +153,7 @@ class ProductsScreen extends GetView<ProductController> {
                                           '-${product.discountPercentage.toStringAsFixed(0)}%',
                                           style: TextStyle(
                                             fontSize: 11,
-                                            color: Colors.red.shade700,
+                                            color: Theme.of(context).colorScheme.onErrorContainer,
                                             fontWeight: FontWeight.w600,
                                           ),
                                         ),
