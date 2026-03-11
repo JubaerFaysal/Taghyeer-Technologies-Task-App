@@ -61,7 +61,7 @@ lib/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/taghyeer_technologies.git
+git clone https://github.com/JubaerFaysal/taghyeer_technologies.git
 cd taghyeer_technologies
 
 
@@ -78,12 +78,24 @@ cd taghyeer_technologies
 
 ## Screenshots
 
-| | | |
-|---|---|---|
-| ![Screenshot 1](screenshots/Screenshot_1773249043.png) | ![Screenshot 2](screenshots/Screenshot_1773249060.png) | ![Screenshot 3](screenshots/Screenshot_1773249066.png) |
-| ![Screenshot 4](screenshots/Screenshot_1773249071.png) | ![Screenshot 5](screenshots/Screenshot_1773249074.png) | ![Screenshot 6](screenshots/Screenshot_1773249078.png) |
-| ![Screenshot 7](screenshots/Screenshot_1773249083.png) | ![Screenshot 8](screenshots/Screenshot_1773249086.png) | ![Screenshot 9](screenshots/Screenshot_1773249089.png) |
-| ![Screenshot 10](screenshots/Screenshot_1773249094.png) | | |
+<p align="center">
+  <img src="screenshots/Screenshot_1773249043.png" width="200" />
+  <img src="screenshots/Screenshot_1773249060.png" width="200" />
+  <img src="screenshots/Screenshot_1773249066.png" width="200" />
+</p>
+<p align="center">
+  <img src="screenshots/Screenshot_1773249071.png" width="200" />
+  <img src="screenshots/Screenshot_1773249074.png" width="200" />
+  <img src="screenshots/Screenshot_1773249078.png" width="200" />
+</p>
+<p align="center">
+  <img src="screenshots/Screenshot_1773249083.png" width="200" />
+  <img src="screenshots/Screenshot_1773249086.png" width="200" />
+  <img src="screenshots/Screenshot_1773249089.png" width="200" />
+</p>
+<p align="center">
+  <img src="screenshots/Screenshot_1773249094.png" width="200" />
+</p>
 
 ---
 
